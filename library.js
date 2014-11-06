@@ -25,5 +25,16 @@ plugin.parse = function(postContent, callback) {
     callback(null, postContent);
 };
 
+plugin.addAdminNavigation = function(header, callback) {
+
+	header.plugins.push({
+		route: '/plugins/editor-plus',
+		icon: 'fa-pencil',
+		name: 'Editor Plus'
+	});
+
+	callback(null, header);
+};
+
 module.exports = plugin;
 

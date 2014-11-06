@@ -5,7 +5,8 @@
 	"url": "https://github.com/tristabeau/nodebb-plugin-editor-plus",
 	"library": "./library.js",
 	"hooks": [
-		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true, "priority": 10 }
+		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true, "priority": 10 },
+	  	{ "hook": "filter:header.build", "method": "register.global.addAdminNavigation" }
 	],
     "staticDirs": {
         "images": "lib/colorpicker/images"
