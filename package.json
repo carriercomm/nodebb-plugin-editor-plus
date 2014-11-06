@@ -1,0 +1,30 @@
+{
+  "name": "nodebb-plugin-editor-plus",
+  "version": "0.0.1",
+  "description": "Allows you to take NodeBB's composer to full mode.",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tristabeau/nodebb-plugin-editor-plus"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "composer",
+    "buttons"
+  ],
+  "author": {
+    "name": "Alexis Lapasset",
+    "email": "tristabeau@free.fr"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tristabeau/nodebb-plugin-editor-plus/issues"
+  },
+  "maintainers": [
+    {
+      "name": "tristabeau",
+      "email": "tristabeau@free.fr"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+	"id": "nodebb-plugin-editor-plus",
+	"name": "NodeBB: Editor Plus",
+	"description": "Allows you to take NodeBB's composer to full mode.",
+	"url": "https://github.com/tristabeau/nodebb-plugin-editor-plus",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true, "priority": 10 }
+	],
+    "staticDirs": {
+        "images": "lib/colorpicker/images"
+    },
+    "scripts": [
+		"./src/buttons.js",
+		"./lib/colorpicker/js/colorpicker.js",
+		"./lib/dropdown/js/dropdown.js"
+	],
+    "less": [
+        "./src/buttons.less",
+        "./lib/colorpicker/css/colorpicker.less",
+        "./lib/dropdown/css/dropdown.less"
+    ]
+}
