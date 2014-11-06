@@ -115,7 +115,7 @@ $('document').ready(function() {
         });
 
         //Title
-        composer.addButton('title1', function(textarea, selectionStart, selectionEnd) {
+        composer.addButton('fa fa-font', function(textarea, selectionStart, selectionEnd) {
             if(start === end){
                 controls.insertIntoTextarea(textarea, '# Insert Code Here');
                 controls.updateTextareaSelection(textarea, selectionStart + 2, selectionEnd + 18);
@@ -123,10 +123,6 @@ $('document').ready(function() {
                 controls.wrapSelectionInTextareaWith(textarea, '# ','');
                 controls.updateTextareaSelection(textarea, selectionStart + 2, selectionEnd + 18);
             }
-        });
-
-        $(window).on("action:composer.loaded", function() {
-            $(".title1").parents('span').append("<div>Titre 1</div>");
         });
 
 	});
