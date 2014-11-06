@@ -74,11 +74,20 @@ $('document').ready(function() {
 		});
         composer.addButton('fa fa-eye-slash', function(textarea, selectionStart, selectionEnd) {
             if(selectionStart === selectionEnd){
-                controls.insertIntoTextarea(textarea, ">! Spoiler");
-                controls.updateTextareaSelection(textarea, selectionStart + 3, selectionStart + 12);
+                controls.insertIntoTextarea(textarea, '>! Spoiler');
+                controls.updateTextareaSelection(textarea, selectionStart + 3, selectionEnd + 12);
             } else {
                 controls.wrapSelectionInTextareaWith(textarea, '>! ', '');
-                controls.updateTextareaSelection(textarea, selectionStart + 3, selectionEnd + 3);
+                controls.updateTextareaSelection(textarea, selectionStart + 3, selectionEnd);
+            }
+        });
+        composer.addButton('fa fa-file-image-o', function(textarea, selectionStart, selectionEnd) {
+            if(selectionStart === selectionEnd){
+                controls.insertIntoTextarea(textarea, '![Description](Link "Title")');
+                controls.updateTextareaSelection(textarea, selectionStart + 15, selectionEnd + 19);
+            } else {
+                controls.wrapSelectionInTextareaWith(textarea, '![Description](', ' "Title")');
+                controls.updateTextareaSelection(textarea, selectionStart + 15, selectionEnd + 15);
             }
         });
 
@@ -121,7 +130,7 @@ $('document').ready(function() {
                 controls.updateTextareaSelection(textarea, selectionStart + 2, selectionEnd + 18);
             } else {
                 controls.wrapSelectionInTextareaWith(textarea, '# ','');
-                controls.updateTextareaSelection(textarea, selectionStart + 2, selectionEnd + 18);
+                controls.updateTextareaSelection(textarea, selectionStart + 2, selectionEnd + 2);
             }
         });
 

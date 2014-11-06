@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-editor-plus",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Allows you to take NodeBB's composer to full mode.",
   "main": "library.js",
   "repository": {
