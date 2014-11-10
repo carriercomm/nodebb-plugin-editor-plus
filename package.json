@@ -27,11 +27,14 @@
       "email": "tristabeau@free.fr"
     }
   ],
+  "nbbpm": {
+    "compatibility": "^0.6.0"
+  }
   "readme": "# NodeBB: Editor Plus\n\nTODO",
   "readmeFilename": "README.md",
   "gitHead": "d09fd1d136ee1bf6d5226c67c30ddb5d7d9b0372",
   "homepage": "https://github.com/tristabeau/nodebb-plugin-editor-plus",
-  "_id": "nodebb-plugin-editor-plus@0.1.1",
+  "_id": "nodebb-plugin-editor-plus@0.1.2",
   "scripts": {},
   "_shasum": "2e892a276b3274dd55c485e5aef4eb25e401422f",
   "_from": "nodebb-plugin-editor-plus@*"
